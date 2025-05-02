@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a21018d34d5a4a06ba842358429b85fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a21018d34d5a4a06ba842358429b85fa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a21018d34d5a4a06ba842358429b85fa = L.map(
+                "map_a21018d34d5a4a06ba842358429b85fa",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1c1b686407811555d165d9016027f287 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1c1b686407811555d165d9016027f287.addTo(map_a21018d34d5a4a06ba842358429b85fa);
+        
+    
+            var circle_marker_1b6a0d49c13ccba20abd4a475f866143 = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_a21018d34d5a4a06ba842358429b85fa);
+        
+    
+        var popup_79e1fe11e43e414db66bd9e4f553fa18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6976c80f3cb373b0bf46fc694fe83c7e = $(`<div id="html_6976c80f3cb373b0bf46fc694fe83c7e" style="width: 100.0%; height: 100.0%;">New York: Net Migration 2300</div>`)[0];
+                popup_79e1fe11e43e414db66bd9e4f553fa18.setContent(html_6976c80f3cb373b0bf46fc694fe83c7e);
+            
+        
+
+        circle_marker_1b6a0d49c13ccba20abd4a475f866143.bindPopup(popup_79e1fe11e43e414db66bd9e4f553fa18)
+        ;
+
+        
+    
+    
+            var circle_marker_16473282cebf0563c31a55608af21bd3 = L.circleMarker(
+                [51.5072, -0.1276],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_a21018d34d5a4a06ba842358429b85fa);
+        
+    
+        var popup_3b78d205f78edfe7e037f8af29b7e8ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b49fbc1de235f7f7a4ac794f1394994 = $(`<div id="html_7b49fbc1de235f7f7a4ac794f1394994" style="width: 100.0%; height: 100.0%;">London: Net Migration -1800</div>`)[0];
+                popup_3b78d205f78edfe7e037f8af29b7e8ac.setContent(html_7b49fbc1de235f7f7a4ac794f1394994);
+            
+        
+
+        circle_marker_16473282cebf0563c31a55608af21bd3.bindPopup(popup_3b78d205f78edfe7e037f8af29b7e8ac)
+        ;
+
+        
+    
+    
+            var circle_marker_8c8dab2628619d2604bbd4699f55f1d3 = L.circleMarker(
+                [25.2048, 55.2708],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_a21018d34d5a4a06ba842358429b85fa);
+        
+    
+        var popup_69ea2b3bd92180e9342dd8a2a66bf4f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dad73dcee2838b29dc20943a78b055f = $(`<div id="html_2dad73dcee2838b29dc20943a78b055f" style="width: 100.0%; height: 100.0%;">Dubai: Net Migration 3000</div>`)[0];
+                popup_69ea2b3bd92180e9342dd8a2a66bf4f0.setContent(html_2dad73dcee2838b29dc20943a78b055f);
+            
+        
+
+        circle_marker_8c8dab2628619d2604bbd4699f55f1d3.bindPopup(popup_69ea2b3bd92180e9342dd8a2a66bf4f0)
+        ;
+
+        
+    
+    
+            var circle_marker_af3303f3f5fd4ac75e1d5d769fd4d181 = L.circleMarker(
+                [1.3521, 103.8198],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_a21018d34d5a4a06ba842358429b85fa);
+        
+    
+        var popup_c941bfd0e9c21de6486d4408d6aad5a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_709281b0e39c6175037f216636dea96c = $(`<div id="html_709281b0e39c6175037f216636dea96c" style="width: 100.0%; height: 100.0%;">Singapore: Net Migration 2200</div>`)[0];
+                popup_c941bfd0e9c21de6486d4408d6aad5a9.setContent(html_709281b0e39c6175037f216636dea96c);
+            
+        
+
+        circle_marker_af3303f3f5fd4ac75e1d5d769fd4d181.bindPopup(popup_c941bfd0e9c21de6486d4408d6aad5a9)
+        ;
+
+        
+    
+    
+            var circle_marker_631d30eceb787ec1ababb7b22bd854af = L.circleMarker(
+                [22.5431, 114.0579],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_a21018d34d5a4a06ba842358429b85fa);
+        
+    
+        var popup_78187eab87889106e7928d3cbbd2b399 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c14160750e73ed9c8301e0d74ea99d3 = $(`<div id="html_8c14160750e73ed9c8301e0d74ea99d3" style="width: 100.0%; height: 100.0%;">Shenzhen: Net Migration 1500</div>`)[0];
+                popup_78187eab87889106e7928d3cbbd2b399.setContent(html_8c14160750e73ed9c8301e0d74ea99d3);
+            
+        
+
+        circle_marker_631d30eceb787ec1ababb7b22bd854af.bindPopup(popup_78187eab87889106e7928d3cbbd2b399)
+        ;
+
+        
+    
+</script>
+</html>
